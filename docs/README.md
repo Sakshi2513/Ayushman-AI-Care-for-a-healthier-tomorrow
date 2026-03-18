@@ -1,4 +1,4 @@
-# 🩺 Ayushman – AI Care Assistant  
+# 🩺 Ayushman – AI Care For A Healthier Tomorrow   
 ### *Empowering Health, Enriching Life*
 
 ---
@@ -7,6 +7,16 @@
 
 **Ayushman** is an AI-powered intelligent healthcare assistant designed to provide personalized health insights, real-time analysis, and meaningful recommendations. It transforms raw health data into understandable and actionable information through a seamless integration of AI, analytics, and an intuitive user interface.
 
+This GSoC-ready prototype demonstrates a **human-in-the-loop AI care workflow**:
+
+- IoT daily routine ingestion (sleep, wake, activity, steps, meals)  
+- Anomaly detection with explainable output and confidence  
+- Role-based dashboards (caregiver vs family)  
+- Human-in-the-loop gating: anomalies remain `pending_review` until caregiver approval  
+- Feedback loop persisted to `backend/history.json` and used for pattern learning  
+- Gemini integration simulation producing structured JSON output (real API optional)  
+- TTS audio summary saved as `backend/static/summary.mp3` and playable in the UI
+  
 ---
 
 ## 🎯 Problem Statement
@@ -103,7 +113,7 @@ The system is designed to evolve into a **fully AI-driven healthcare assistant**
 
 ## 🏗️ Project Structure
 
-
+```
 AI-Care-Assistant/
 │
 ├── backend/
@@ -117,20 +127,69 @@ AI-Care-Assistant/
 │ └── package.json
 │
 └── README.md
+```
 
+---
 
-**###🧪 Data Source**
+### 🧪 Data Source
+
 #### Current:
 
 - User-provided inputs (manual entry)
 
 #### Planned:
 
--IoT device integration
+- IoT device integration
 - External health datasets/APIs
 - Historical data for pattern learning
 
   ---
+
+## ⚡ Setup
+### Backend (PowerShell)
+python -m venv backend\.venv
+.\backend\.venv\Scripts\Activate.ps1
+pip install -r backend\requirements.txt
+uvicorn backend.main:app --reload --port 8000
+
+**If port 8000 is in use**, try --port 8001
+
+**If PowerShell blocks activation:**
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+### Frontend (PowerShell)
+cd frontend
+npm install
+npm run dev
+
+**Open at:** http://localhost:5173
+
+**If backend on a different port:**
+$env:VITE_API_BASE="http://localhost:8001"
+npm run dev
+
+#### Running Both Terminals
+**Terminal A:**
+.\backend\.venv\Scripts\Activate.ps1
+uvicorn backend.main:app --reload --port 8000
+
+**Terminal B:**
+cd frontend
+npm run dev
+
+---
+
+## 🎬 Demo Flow (GSoC Submission)
+
+- Click Analyze today (caregiver view) using sample IoT JSON
+- Trigger anomalies (low sleep, low steps, missed meals)
+- Show pending_review gating for family
+- Click Play TTS summary to demonstrate audio output
+- Approve anomalies to update pattern learning (backend/history.json)
+
+**Optional:** Enable real Gemini API via environment variable and use_real_gemini_api: true
+
+---
 
  ### 🔐 Ethical Considerations
 
