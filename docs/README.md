@@ -145,6 +145,16 @@ AI-Care-Assistant/
 
   ---
 
+## 🖼️ Prototype Demo
+
+![Alt text](https://github.com/Sakshi2513/Ayushman-AI-Care-for-a-healthier-tomorrow/blob/main/docs/images/1.png?raw=true)
+**Dashboard view – shows user data and AI insights**
+
+![Alt text](https://github.com/Sakshi2513/Ayushman-AI-Care-for-a-healthier-tomorrow/blob/main/docs/images/2.png?raw=true)
+**Interactive Daily Summary Dashboard – run analysis, simulate anomalies, and manage caregiver approvals with real-time feedback and TTS audio output.**
+
+---
+
 ## ⚡ Setup
 ### Backend (PowerShell)
 python -m venv backend\.venv
