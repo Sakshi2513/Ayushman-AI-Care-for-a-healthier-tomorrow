@@ -1,130 +1,163 @@
-# AI Care Assistant (Prototype)
+# 🩺 Ayushman – AI Care Assistant  
+### *Empowering Health, Enriching Life*
 
-A **GSoC-ready** prototype demonstrating a human-in-the-loop AI care workflow:
+---
 
-- **IoT daily routine ingestion** (sleep/wake/activity/steps/meals)
-- **Anomaly detection + explainable output + confidence**
-- **Role-based dashboards** (caregiver vs family)
-- **Human-in-the-loop gating**: anomalies are **pending_review** until caregiver approval
-- **Feedback loop** persisted to `backend/history.json` and used for **pattern learning**
-- **Gemini integration simulation** producing **structured JSON output** (real API optional)
-- **TTS** audio summary saved as `backend/static/summary.mp3` and playable in the UI
+## 📌 Overview
 
-## Project structure
+**Ayushman** is an AI-powered intelligent healthcare assistant designed to provide personalized health insights, real-time analysis, and meaningful recommendations. It transforms raw health data into understandable and actionable information through a seamless integration of AI, analytics, and an intuitive user interface.
 
-```
+---
+
+## 🎯 Problem Statement
+
+Most existing health applications focus on **data collection and tracking** (steps, heart rate, etc.) but fail to provide:
+
+- Intelligent interpretation of health data  
+- Personalized recommendations  
+- Conversational interaction  
+- Unified, user-friendly insights  
+
+Users are often left with **data without clarity**.
+
+---
+
+## 💡 Solution
+
+Ayushman addresses this gap by:
+
+- Collecting user health inputs (symptoms, vitals, etc.)  
+- Processing them through an AI-ready backend  
+- Generating structured insights and summaries  
+- Presenting results via an interactive dashboard  
+
+The system is designed to evolve into a **fully AI-driven healthcare assistant**.
+
+---
+
+## 🚀 Features
+
+### ✅ Implemented
+
+- 📊 Interactive health dashboard  
+- 🧾 User input-based health analysis  
+- 🔗 Seamless frontend-backend integration  
+- ⚡ Real-time API communication using FastAPI  
+
+---
+
+### 🌟 Unique Features
+
+- 🤖 AI-ready architecture (Gemini API integration in progress)  
+- 💬 Conversational health insights (planned)  
+- 📈 Pattern learning and trend detection  
+- 🎙️ Voice interaction (Text-to-Speech support planned)  
+- 👥 Role-based dashboards (patient / doctor view)  
+- 🚨 Smart alerts and notifications  
+- 🧠 Context-aware personalized recommendations  
+
+---
+
+## 🧠 Current Status
+
+- Fully functional prototype  
+- Core health analysis flow implemented  
+- Backend and frontend integrated successfully  
+- Dashboard and user interaction working  
+
+---
+
+## 🔄 Work in Progress
+
+- Integration of Gemini API for real AI-generated insights  
+- Enhanced error handling and system reliability  
+- Improved frontend user experience (loading states, feedback)  
+
+---
+
+## 🔮 Future Scope
+
+- 📡 Integration with IoT devices (smartwatches, health sensors)  
+- 🧠 Advanced AI-driven predictive analytics  
+- 📊 Long-term health pattern tracking  
+- 🏥 Doctor integration and report sharing  
+- 🔔 Smart health alerts and reminders  
+- ☁️ Cloud deployment for scalability and accessibility  
+
+---
+
+## ⚙️ Tech Stack
+
+### 🖥️ Frontend
+- Vite  
+- JavaScript  
+- HTML/CSS  
+
+### ⚙️ Backend
+- FastAPI (Python)  
+
+### 🤖 AI
+- Gemini API *(integration in progress)*  
+
+---
+
+## 🏗️ Project Structure
+
+
 AI-Care-Assistant/
-├─ backend/
-│  ├─ main.py
-│  ├─ history.json
-│  ├─ requirements.txt
-│  ├─ prompts/summary_prompt.json
-│  ├─ pattern_learning.py
-│  ├─ gemini_integration.py
-│  └─ tts.py
-├─ frontend/
-│  ├─ package.json
-│  ├─ vite.config.js
-│  ├─ tailwind.config.js
-│  ├─ postcss.config.js
-│  ├─ index.html
-│  └─ src/
-│     ├─ App.jsx
-│     ├─ Dashboard.jsx
-│     ├─ api.js
-│     ├─ main.jsx
-│     └─ index.css
-├─ data/sample_iot.json
-└─ docs/README.md
-```
+│
+├── backend/
+│ ├── main.py
+│ ├── gemini_integration.py
+│ ├── pattern_learning.py
+│ └── tts.py
+│
+├── frontend/
+│ ├── src/
+│ └── package.json
+│
+└── README.md
 
-## Backend
 
-### Endpoints
+**###🧪 Data Source**
+#### Current:
 
-- `POST /analyze`
-  - Input: `{ role: "caregiver"|"family", iot: { ... } }`
-  - Output: structured summary + anomalies + confidence + `audio_url`
-  - If anomalies are detected: `status = "pending_review"`
-  - If no anomalies: `status = "approved"` and the run is used to refine baselines
+- User-provided inputs (manual entry)
 
-- `POST /feedback`
-  - Input: `{ analysis_id, approve, comment?, reviewer_role }`
-  - Approvals update learned baselines in `backend/history.json`
+#### Planned:
 
-- `GET /audio/{analysis_id}`
-  - Serves the latest generated audio file for that analysis.
+-IoT device integration
+- External health datasets/APIs
+- Historical data for pattern learning
 
-### Setup (PowerShell)
+  ---
 
-From the repo root:
+ ### 🔐 Ethical Considerations
 
-```powershell
-python -m venv backend\.venv
-.\backend\.venv\Scripts\Activate.ps1
-pip install -r backend\requirements.txt
-uvicorn backend.main:app --reload --port 8000
-```
+- Not a replacement for professional medical advice
+- Designed with user data awareness and responsibility
+- Future implementation of human-in-the-loop validation
 
-If port `8000` is already in use, run on `8001`:
+  ---
 
-```powershell
-uvicorn backend.main:app --reload --port 8001
-```
+### 🏆 Why Ayushman Stands Out
+**Feature**	                         **Traditional Apps**	              **Ayushman**
+**Data Tracking**                            ✅	                          ✅
+**AI Insights**	                             ❌	                            ✅
+**Conversational Interaction**	             ❌	                            ✅
+**Personalized Recommendations**	         Limited	                     Advanced
+**Health Analytics Dashboard**	            Basic	                      Intelligent
 
-If PowerShell blocks activation, run:
+---
 
-```powershell
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-```
+### 🎯 Vision
 
-## Frontend
+To build an intelligent, ethical, and accessible healthcare assistant that empowers individuals with actionable insights, proactive care, and AI-driven health understanding.
 
-### Setup (PowerShell)
+---
 
-From the repo root:
+### 👩‍💻 Author
+Sakshi Sheogekar
 
-```powershell
-cd frontend
-npm install
-npm run dev
-```
-
-Open the app at `http://localhost:5173`.
-
-If you ran the backend on a different port (e.g. `8001`), start the frontend with:
-
-```powershell
-$env:VITE_API_BASE="http://localhost:8001"
-npm run dev
-```
-
-## Run both (two terminals)
-
-### Terminal A
-
-```powershell
-.\backend\.venv\Scripts\Activate.ps1
-uvicorn backend.main:app --reload --port 8000
-```
-
-### Terminal B
-
-```powershell
-cd frontend
-npm run dev
-```
-
-## Demo flow (what to show in a GSoC submission)
-
-1. Click **Analyze today** (caregiver view) using the bundled sample IoT JSON.
-2. Trigger anomalies using the **Quick anomaly scenarios** buttons (low sleep, low steps, missed meals).
-3. Show `pending_review` state and explain why family is gated.
-4. Click **Play TTS summary** to demonstrate accessible audio output.
-5. Use **Approve** to publish and update pattern learning; confirm `backend/history.json` updates.
-
-## Optional: real Gemini API (kept off by default)
-
-Set `GEMINI_API_KEY` in an environment variable or `.env` file and pass `use_real_gemini_api: true` in `/analyze`.
-The prototype remains fully functional without network access.
-
+### ⭐ Support
+If you find this project useful, consider giving it a ⭐ on GitHub.
