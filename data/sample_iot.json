@@ -1,0 +1,9 @@
+{
+  "wake_time": "07:30",
+  "sleep_time": "22:45",
+  "sleep_hours": 7.8,
+  "steps": 3420,
+  "activity_level": 0.58,
+  "meals": ["08:10", "12:35", "18:55"]
+}
+

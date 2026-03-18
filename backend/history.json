@@ -1,0 +1,1324 @@
+{
+  "version": 1,
+  "pattern_state": {
+    "count": 45,
+    "means": {
+      "sleep_hours": 7.8,
+      "steps": 26163.251835869483,
+      "activity_level": 0.5757435228812484,
+      "meals_count": 3.0,
+      "wake_time_minutes": 452.6666666666667
+    },
+    "m2": {
+      "sleep_hours": 0.0,
+      "steps": 901284172184.2616,
+      "activity_level": 0.14954057959808675,
+      "meals_count": 0.0,
+      "wake_time_minutes": 14079.999999999998
+    }
+  },
+  "analyses": [
+    {
+      "analysis_id": "fe076aff-0324-4f88-a393-c01ee84d0a87",
+      "created_at": "2026-03-17T15:22:12.558140+00:00",
+      "role": "caregiver",
+      "status": "pending_review",
+      "iot_raw": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 450
+      },
+      "anomalies": [
+        {
+          "metric": "steps",
+          "observed": 3420,
+          "expected": 3000,
+          "z_score": 420.0,
+          "severity": "high",
+          "explanation": "Step count deviates from the learned baseline."
+        }
+      ],
+      "confidence": 0.42,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. Notable deviation: steps (high).",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [
+          {
+            "metric": "steps",
+            "observed": 3420,
+            "expected": 3000,
+            "severity": "high",
+            "explanation": "Step count deviates from the learned baseline."
+          }
+        ],
+        "recommendations": [
+          "Verify mobility; consider a short walk or gentle activity if appropriate."
+        ],
+        "confidence": 0.42,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. Notable deviation: steps (high). Output is pending human review due to anomalies. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Something looked different from the usual routine; the caregiver is reviewing details. Confidence: 42%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": false
+    },
+    {
+      "analysis_id": "36f8a773-4f1d-4af7-95d2-160be2f6ab5b",
+      "created_at": "2026-03-17T15:23:00.033970+00:00",
+      "role": "caregiver",
+      "status": "approved",
+      "iot_raw": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 450
+      },
+      "anomalies": [],
+      "confidence": 0.71,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3.",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.71,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. No anomalies detected. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Routine looked mostly normal. Confidence: 71%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": true
+    },
+    {
+      "analysis_id": "9dc84dea-afc9-4907-a4a0-dc12e52314ad",
+      "created_at": "2026-03-17T17:48:53.873257+00:00",
+      "role": "caregiver",
+      "status": "approved",
+      "iot_raw": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 450
+      },
+      "anomalies": [],
+      "confidence": 0.82,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3.",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.82,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. No anomalies detected. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Routine looked mostly normal. Confidence: 82%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": true
+    },
+    {
+      "analysis_id": "07005a6f-92e0-423f-bacc-f2c53369a523",
+      "created_at": "2026-03-17T17:49:15.534244+00:00",
+      "role": "caregiver",
+      "status": "pending_review",
+      "iot_raw": {
+        "wake_time": "09:30",
+        "sleep_time": "23:50",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "09:30",
+        "sleep_time": "23:50",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 570
+      },
+      "anomalies": [
+        {
+          "metric": "wake_time_minutes",
+          "observed": 570.0,
+          "expected": 450.0,
+          "z_score": 120000.0,
+          "severity": "high",
+          "explanation": "Wake time deviates from the learned baseline."
+        }
+      ],
+      "confidence": 0.66,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 09:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. Notable deviation: wake_time_minutes (high).",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [
+          {
+            "metric": "wake_time_minutes",
+            "observed": 570.0,
+            "expected": 450.0,
+            "severity": "high",
+            "explanation": "Wake time deviates from the learned baseline."
+          }
+        ],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.66,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 09:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. Notable deviation: wake_time_minutes (high). Output is pending human review due to anomalies. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Something looked different from the usual routine; the caregiver is reviewing details. Confidence: 66%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": false
+    },
+    {
+      "analysis_id": "7037c916-0879-43e0-94a6-d63e5bcbfa58",
+      "created_at": "2026-03-17T17:53:16.287918+00:00",
+      "role": "caregiver",
+      "status": "approved",
+      "iot_raw": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 450
+      },
+      "anomalies": [],
+      "confidence": 0.9,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3.",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.9,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. No anomalies detected. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Routine looked mostly normal. Confidence: 90%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": true,
+      "reviewed_at": "2026-03-17T17:53:22.403426+00:00"
+    },
+    {
+      "analysis_id": "66225d00-16e5-417e-9106-904de60eca6f",
+      "created_at": "2026-03-17T17:53:28.801126+00:00",
+      "role": "family",
+      "status": "approved",
+      "iot_raw": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 450
+      },
+      "anomalies": [],
+      "confidence": 0.9,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3.",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.9,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. No anomalies detected. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Routine looked mostly normal. Confidence: 90%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": true
+    },
+    {
+      "analysis_id": "8eb997fe-aa90-476c-bf09-1dbfecf81c5b",
+      "created_at": "2026-03-17T17:53:35.790989+00:00",
+      "role": "family",
+      "status": "rejected",
+      "iot_raw": {
+        "wake_time": "11:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "11:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 690
+      },
+      "anomalies": [
+        {
+          "metric": "wake_time_minutes",
+          "observed": 690.0,
+          "expected": 450.0,
+          "z_score": 240000.0,
+          "severity": "high",
+          "explanation": "Wake time deviates from the learned baseline."
+        }
+      ],
+      "confidence": 0.66,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 11:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. Notable deviation: wake_time_minutes (high).",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [
+          {
+            "metric": "wake_time_minutes",
+            "observed": 690.0,
+            "expected": 450.0,
+            "severity": "high",
+            "explanation": "Wake time deviates from the learned baseline."
+          }
+        ],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.66,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 11:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. Notable deviation: wake_time_minutes (high). Output is pending human review due to anomalies. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Something looked different from the usual routine; the caregiver is reviewing details. Confidence: 66%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": false,
+      "reviewed_at": "2026-03-17T17:53:58.619240+00:00"
+    },
+    {
+      "analysis_id": "6e912e81-b6ec-479c-a430-1a8d33249944",
+      "created_at": "2026-03-17T18:07:27.239264+00:00",
+      "role": "caregiver",
+      "status": "approved",
+      "iot_raw": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "07:30",
+        "sleep_time": "22:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 450
+      },
+      "anomalies": [],
+      "confidence": 0.9,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3.",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.9,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. No anomalies detected. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Routine looked mostly normal. Confidence: 90%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": true
+    },
+    {
+      "analysis_id": "3da863f7-6ea4-474a-8456-a723b01513ee",
+      "created_at": "2026-03-17T18:09:29.076979+00:00",
+      "role": "caregiver",
+      "status": "approved",
+      "iot_raw": {
+        "wake_time": "07:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "07:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 450
+      },
+      "anomalies": [],
+      "confidence": 0.9,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3.",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.9,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. No anomalies detected. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Routine looked mostly normal. Confidence: 90%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": true
+    },
+    {
+      "analysis_id": "767f9f06-b047-4051-b6cf-ca83b203bb10",
+      "created_at": "2026-03-17T18:09:31.746530+00:00",
+      "role": "caregiver",
+      "status": "approved",
+      "iot_raw": {
+        "wake_time": "07:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "07:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 450
+      },
+      "anomalies": [],
+      "confidence": 0.9,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3.",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.9,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. No anomalies detected. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Routine looked mostly normal. Confidence: 90%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": true
+    },
+    {
+      "analysis_id": "77834af5-97f4-48d3-994d-2bbbb10da3f7",
+      "created_at": "2026-03-17T18:09:33.266464+00:00",
+      "role": "caregiver",
+      "status": "approved",
+      "iot_raw": {
+        "wake_time": "07:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "07:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 3420,
+        "activity_level": 0.58,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 450
+      },
+      "anomalies": [],
+      "confidence": 0.9,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3.",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 3420 steps",
+          "Activity level: 0.58",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.9,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 07:30, slept ~7.8h, steps 3420, activity 0.58, meals logged 3. No anomalies detected. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Routine looked mostly normal. Confidence: 90%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": true
+    },
+    {
+      "analysis_id": "8bdfe1ab-7c80-4dab-8bec-96c4865f7fcc",
+      "created_at": "2026-03-17T18:10:13.954040+00:00",
+      "role": "caregiver",
+      "status": "rejected",
+      "iot_raw": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 964153,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 964153,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 570
+      },
+      "anomalies": [
+        {
+          "metric": "steps",
+          "observed": 964153,
+          "expected": 3285,
+          "z_score": 11682.03,
+          "severity": "high",
+          "explanation": "Step count deviates from the learned baseline."
+        },
+        {
+          "metric": "activity_level",
+          "observed": 0.95,
+          "expected": 0.57,
+          "z_score": 50.78,
+          "severity": "high",
+          "explanation": "Activity level deviates from the learned baseline."
+        },
+        {
+          "metric": "wake_time_minutes",
+          "observed": 570.0,
+          "expected": 450.0,
+          "z_score": 120000.0,
+          "severity": "high",
+          "explanation": "Wake time deviates from the learned baseline."
+        }
+      ],
+      "confidence": 0.55,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 09:30, slept ~7.8h, steps 964153, activity 0.955, meals logged 3. Notable deviation: steps (high).",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 964153 steps",
+          "Activity level: 0.955",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [
+          {
+            "metric": "steps",
+            "observed": 964153,
+            "expected": 3285,
+            "severity": "high",
+            "explanation": "Step count deviates from the learned baseline."
+          },
+          {
+            "metric": "activity_level",
+            "observed": 0.95,
+            "expected": 0.57,
+            "severity": "high",
+            "explanation": "Activity level deviates from the learned baseline."
+          },
+          {
+            "metric": "wake_time_minutes",
+            "observed": 570.0,
+            "expected": 450.0,
+            "severity": "high",
+            "explanation": "Wake time deviates from the learned baseline."
+          }
+        ],
+        "recommendations": [
+          "Verify mobility; consider a short walk or gentle activity if appropriate."
+        ],
+        "confidence": 0.55,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 09:30, slept ~7.8h, steps 964153, activity 0.955, meals logged 3. Notable deviation: steps (high). Output is pending human review due to anomalies. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Something looked different from the usual routine; the caregiver is reviewing details. Confidence: 55%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": false,
+      "reviewed_at": "2026-03-17T18:10:48.157724+00:00"
+    },
+    {
+      "analysis_id": "66bad485-55ae-418f-82c4-ef1f89d85699",
+      "created_at": "2026-03-17T18:11:19.262579+00:00",
+      "role": "family",
+      "status": "pending_review",
+      "iot_raw": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 93,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 93,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 570
+      },
+      "anomalies": [
+        {
+          "metric": "activity_level",
+          "observed": 0.95,
+          "expected": 0.58,
+          "z_score": 6.51,
+          "severity": "high",
+          "explanation": "Activity level deviates from the learned baseline."
+        },
+        {
+          "metric": "wake_time_minutes",
+          "observed": 570.0,
+          "expected": 452.67,
+          "z_score": 6.56,
+          "severity": "high",
+          "explanation": "Wake time deviates from the learned baseline."
+        }
+      ],
+      "confidence": 0.55,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 09:30, slept ~7.8h, steps 93, activity 0.955, meals logged 3. Notable deviation: activity_level (high).",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 93 steps",
+          "Activity level: 0.955",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [
+          {
+            "metric": "activity_level",
+            "observed": 0.95,
+            "expected": 0.58,
+            "severity": "high",
+            "explanation": "Activity level deviates from the learned baseline."
+          },
+          {
+            "metric": "wake_time_minutes",
+            "observed": 570.0,
+            "expected": 452.67,
+            "severity": "high",
+            "explanation": "Wake time deviates from the learned baseline."
+          }
+        ],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.55,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 09:30, slept ~7.8h, steps 93, activity 0.955, meals logged 3. Notable deviation: activity_level (high). Output is pending human review due to anomalies. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Something looked different from the usual routine; the caregiver is reviewing details. Confidence: 55%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": false
+    },
+    {
+      "analysis_id": "af09bf1f-62be-43c6-b8b0-3ca6895924ac",
+      "created_at": "2026-03-17T18:11:21.566728+00:00",
+      "role": "family",
+      "status": "pending_review",
+      "iot_raw": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 93,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 93,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 570
+      },
+      "anomalies": [
+        {
+          "metric": "activity_level",
+          "observed": 0.95,
+          "expected": 0.58,
+          "z_score": 6.51,
+          "severity": "high",
+          "explanation": "Activity level deviates from the learned baseline."
+        },
+        {
+          "metric": "wake_time_minutes",
+          "observed": 570.0,
+          "expected": 452.67,
+          "z_score": 6.56,
+          "severity": "high",
+          "explanation": "Wake time deviates from the learned baseline."
+        }
+      ],
+      "confidence": 0.55,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 09:30, slept ~7.8h, steps 93, activity 0.955, meals logged 3. Notable deviation: activity_level (high).",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 93 steps",
+          "Activity level: 0.955",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [
+          {
+            "metric": "activity_level",
+            "observed": 0.95,
+            "expected": 0.58,
+            "severity": "high",
+            "explanation": "Activity level deviates from the learned baseline."
+          },
+          {
+            "metric": "wake_time_minutes",
+            "observed": 570.0,
+            "expected": 452.67,
+            "severity": "high",
+            "explanation": "Wake time deviates from the learned baseline."
+          }
+        ],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.55,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 09:30, slept ~7.8h, steps 93, activity 0.955, meals logged 3. Notable deviation: activity_level (high). Output is pending human review due to anomalies. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Something looked different from the usual routine; the caregiver is reviewing details. Confidence: 55%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": false
+    },
+    {
+      "analysis_id": "4e3c7bb5-841b-4c9d-891b-8869b7f17c3f",
+      "created_at": "2026-03-17T18:11:31.014824+00:00",
+      "role": "family",
+      "status": "pending_review",
+      "iot_raw": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 269,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 269,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 570
+      },
+      "anomalies": [
+        {
+          "metric": "activity_level",
+          "observed": 0.95,
+          "expected": 0.58,
+          "z_score": 6.51,
+          "severity": "high",
+          "explanation": "Activity level deviates from the learned baseline."
+        },
+        {
+          "metric": "wake_time_minutes",
+          "observed": 570.0,
+          "expected": 452.67,
+          "z_score": 6.56,
+          "severity": "high",
+          "explanation": "Wake time deviates from the learned baseline."
+        }
+      ],
+      "confidence": 0.55,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 09:30, slept ~7.8h, steps 269, activity 0.955, meals logged 3. Notable deviation: activity_level (high).",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 269 steps",
+          "Activity level: 0.955",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [
+          {
+            "metric": "activity_level",
+            "observed": 0.95,
+            "expected": 0.58,
+            "severity": "high",
+            "explanation": "Activity level deviates from the learned baseline."
+          },
+          {
+            "metric": "wake_time_minutes",
+            "observed": 570.0,
+            "expected": 452.67,
+            "severity": "high",
+            "explanation": "Wake time deviates from the learned baseline."
+          }
+        ],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.55,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 09:30, slept ~7.8h, steps 269, activity 0.955, meals logged 3. Notable deviation: activity_level (high). Output is pending human review due to anomalies. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Something looked different from the usual routine; the caregiver is reviewing details. Confidence: 55%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": false
+    },
+    {
+      "analysis_id": "d151bc2c-f0b1-4fae-8719-d7238f7d519c",
+      "created_at": "2026-03-17T18:11:49.988538+00:00",
+      "role": "caregiver",
+      "status": "pending_review",
+      "iot_raw": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 269,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 269,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 570
+      },
+      "anomalies": [
+        {
+          "metric": "activity_level",
+          "observed": 0.95,
+          "expected": 0.58,
+          "z_score": 6.51,
+          "severity": "high",
+          "explanation": "Activity level deviates from the learned baseline."
+        },
+        {
+          "metric": "wake_time_minutes",
+          "observed": 570.0,
+          "expected": 452.67,
+          "z_score": 6.56,
+          "severity": "high",
+          "explanation": "Wake time deviates from the learned baseline."
+        }
+      ],
+      "confidence": 0.55,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 09:30, slept ~7.8h, steps 269, activity 0.955, meals logged 3. Notable deviation: activity_level (high).",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 269 steps",
+          "Activity level: 0.955",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [
+          {
+            "metric": "activity_level",
+            "observed": 0.95,
+            "expected": 0.58,
+            "severity": "high",
+            "explanation": "Activity level deviates from the learned baseline."
+          },
+          {
+            "metric": "wake_time_minutes",
+            "observed": 570.0,
+            "expected": 452.67,
+            "severity": "high",
+            "explanation": "Wake time deviates from the learned baseline."
+          }
+        ],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.55,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 09:30, slept ~7.8h, steps 269, activity 0.955, meals logged 3. Notable deviation: activity_level (high). Output is pending human review due to anomalies. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Something looked different from the usual routine; the caregiver is reviewing details. Confidence: 55%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": false
+    },
+    {
+      "analysis_id": "c6084154-194a-4b44-95d7-cad67adde1cf",
+      "created_at": "2026-03-17T18:11:51.369981+00:00",
+      "role": "caregiver",
+      "status": "pending_review",
+      "iot_raw": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 269,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ]
+      },
+      "iot_norm": {
+        "wake_time": "09:30",
+        "sleep_time": "11:45",
+        "sleep_hours": 7.8,
+        "steps": 269,
+        "activity_level": 0.955,
+        "meals": [
+          "08:10",
+          "12:35",
+          "18:55"
+        ],
+        "meals_count": 3,
+        "wake_time_minutes": 570
+      },
+      "anomalies": [
+        {
+          "metric": "activity_level",
+          "observed": 0.95,
+          "expected": 0.58,
+          "z_score": 6.51,
+          "severity": "high",
+          "explanation": "Activity level deviates from the learned baseline."
+        },
+        {
+          "metric": "wake_time_minutes",
+          "observed": 570.0,
+          "expected": 452.67,
+          "z_score": 6.56,
+          "severity": "high",
+          "explanation": "Wake time deviates from the learned baseline."
+        }
+      ],
+      "confidence": 0.55,
+      "gemini": {
+        "daily_summary": "Routine summary: wake at 09:30, slept ~7.8h, steps 269, activity 0.955, meals logged 3. Notable deviation: activity_level (high).",
+        "key_points": [
+          "Sleep: ~7.8 hours",
+          "Mobility: 269 steps",
+          "Activity level: 0.955",
+          "Meals recorded: 3"
+        ],
+        "anomalies": [
+          {
+            "metric": "activity_level",
+            "observed": 0.95,
+            "expected": 0.58,
+            "severity": "high",
+            "explanation": "Activity level deviates from the learned baseline."
+          },
+          {
+            "metric": "wake_time_minutes",
+            "observed": 570.0,
+            "expected": 452.67,
+            "severity": "high",
+            "explanation": "Wake time deviates from the learned baseline."
+          }
+        ],
+        "recommendations": [
+          "Maintain the current routine; continue monitoring trends."
+        ],
+        "confidence": 0.55,
+        "role_adapted": {
+          "caregiver": "Routine summary: wake at 09:30, slept ~7.8h, steps 269, activity 0.955, meals logged 3. Notable deviation: activity_level (high). Output is pending human review due to anomalies. Include context (med changes, visitors, outings) if available.",
+          "family": "Today’s update: Something looked different from the usual routine; the caregiver is reviewing details. Confidence: 55%."
+        },
+        "meta": {
+          "mode": "simulated",
+          "model": "gemini-sim",
+          "prompt_loaded": true
+        }
+      },
+      "audio_filename": "summary.mp3",
+      "family_visible": false
+    }
+  ],
+  "feedback": [
+    {
+      "analysis_id": "7037c916-0879-43e0-94a6-d63e5bcbfa58",
+      "approve": true,
+      "comment": null,
+      "reviewer_role": "caregiver",
+      "created_at": "2026-03-17T17:53:22.403452+00:00",
+      "prior_status": "approved",
+      "new_status": "approved"
+    },
+    {
+      "analysis_id": "8eb997fe-aa90-476c-bf09-1dbfecf81c5b",
+      "approve": false,
+      "comment": null,
+      "reviewer_role": "caregiver",
+      "created_at": "2026-03-17T17:53:58.619296+00:00",
+      "prior_status": "pending_review",
+      "new_status": "rejected"
+    },
+    {
+      "analysis_id": "8bdfe1ab-7c80-4dab-8bec-96c4865f7fcc",
+      "approve": true,
+      "comment": "bad",
+      "reviewer_role": "caregiver",
+      "created_at": "2026-03-17T18:10:46.043351+00:00",
+      "prior_status": "pending_review",
+      "new_status": "approved"
+    },
+    {
+      "analysis_id": "8bdfe1ab-7c80-4dab-8bec-96c4865f7fcc",
+      "approve": false,
+      "comment": null,
+      "reviewer_role": "caregiver",
+      "created_at": "2026-03-17T18:10:48.157737+00:00",
+      "prior_status": "approved",
+      "new_status": "rejected"
+    }
+  ]
+}

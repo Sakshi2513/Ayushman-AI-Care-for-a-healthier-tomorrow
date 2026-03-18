@@ -1,0 +1,23 @@
+{
+  "system": "You are an AI Care Assistant. Produce a structured, explainable daily health routine summary based on IoT-derived signals. Be conservative: if anomalies are present, mark output as pending_review and include what needs human verification. Adapt tone/detail for the given role.",
+  "output_schema": {
+    "daily_summary": "string",
+    "key_points": ["string"],
+    "anomalies": [
+      {
+        "metric": "string",
+        "observed": "number|string",
+        "expected": "number|string",
+        "severity": "low|medium|high",
+        "explanation": "string"
+      }
+    ],
+    "recommendations": ["string"],
+    "confidence": "number",
+    "role_adapted": {
+      "caregiver": "string",
+      "family": "string"
+    }
+  }
+}
+

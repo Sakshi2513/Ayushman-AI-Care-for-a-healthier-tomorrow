@@ -1,0 +1,8 @@
+{
+    "system_prompt": "You are an AI care assistant. Summarize sensor data in human-readable language. Do NOT provide medical advice. Include reasons for any anomalies.",
+    "schema": {
+      "daily_summary": "string",
+      "alert_explanation": "string",
+      "confidence": "number"
+    }
+  }
